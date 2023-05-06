@@ -1,3 +1,5 @@
+/*
+
 .App {
   text-align: center;
 }
@@ -12,22 +14,169 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+*/
 
-.App-header {
+
+.App { /* era App-header*/
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /*font-size: calc(10px + 2vmin);*/
+  font-size: 24px;
   color: white;
+
+  box-shadow: inset 5px 5px blue, inset -5px -5px blue; /* internal border */
 }
 
+.container {
+    display: flex;
+    width: 95%;
+    height: 100%;
+}
+
+.left-column {
+    /*flex-basis: 40%;*/
+    /*align: center;*/
+    width: 30%;
+}
+
+.grid8container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15%;
+}
+
+.gridnextcontainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;  /* put new things in different rows*/
+  flex-grow: 1;            /* push header to top */
+  justify-content: center; /* horiz */
+  align-items: center;     /* vert */
+  overflow-y: auto;        /* footer doesnt get cut */
+
+  /*border: 1px inset red;*/
+  /*box-shadow: inset 5px 5px red, inset -5px -5px red; /* internal border */
+}
+
+.n_buttons_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.nextbuttons {
+  border: 3px solid #999;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 10px;
+  line-height: 210%;
+  height: 80px;
+  text-align: center;
+  width: 80px;
+}
+
+.s_button {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 50px;
+  height: 50px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 50px;
+}
+
+.s_button_clicked {
+  background: orange;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 50px;
+  height: 50px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 50px;
+}
+
+.s_button:hover{
+  background-color: grey;
+}
+
+a{
+  color: red;
+  text-decoration: none;
+}
+
+.submit_button {
+  border-radius: 5px;
+  background: #fff;
+  border: 5px solid #999;
+  font-size: 24px;
+  font-weight: bold;
+  height: 50px;
+  margin-right: -1px;
+  margin-top: -1px;
+  text-align: center;
+}
+
+.submit_button:hover {
+  background-color: grey;
+}
+
+.grid_label {
+  background: #aaa;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 50px;
+  height: 50px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 50px;
+}
+
+
+th {
+    max-height: 50px;
+    min-height: 50px;
+    height: 50px;
+    width: 50px;
+    max-width: 50px;
+    min-width: 50px;
+    border: 1px solid #999;
+}
+td {
+    height: 50px;
+    width: 50px;
+}
+
+/*
 .App-link {
   color: #61dafb;
 }
+*/
 
+/*
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +185,4 @@
     transform: rotate(360deg);
   }
 }
+*/
