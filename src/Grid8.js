@@ -176,7 +176,7 @@ const Grid8 = () => {
 
             }
 
-            if(next_but[1]-next_but[0] > 1){
+            if(next_but[1]-next_but[0] > 1 && (new_rl.includes("-") && new_cl.includes("-")) ){
                 recover_from_nothing = true;
             }
 
