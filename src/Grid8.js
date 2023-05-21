@@ -226,17 +226,17 @@ const Grid8 = () => {
             }else{
                 if(new_rl.includes("-")){
                 // if all cols are mapped
-                    if(recover_from_nothing){
-                        set_next([next_but[0]+1,Math.max(...new_cl)]);
+                    if(Math.max(...new_rl.filter(Number))+1 !== Math.max(...new_cl)){
+                        set_next([Math.max(...new_rl.filter(Number))+1,Math.max(...new_cl)]);
                     }else{
-                        set_next([Math.max(...new_cl),next_but[1]+1]);
+                        set_next([Math.max(...new_rl.filter(Number))+2,Math.max(...new_cl)]);
                     }
                 }else{
                 // if all rows are mapped
-                    if(recover_from_nothing){
-                        set_next([next_but[0]+1,Math.max(...new_rl)]);
+                    if(Math.max(...new_cl.filter(Number))+1 !== Math.max(...new_rl)){
+                        set_next([Math.max(...new_cl.filter(Number))+1,Math.max(...new_rl)]);
                     }else{
-                        set_next([Math.max(...new_rl),next_but[1]+1]);
+                        set_next([Math.max(...new_cl.filter(Number))+2,Math.max(...new_rl)]);
                     }
                 }
             }
